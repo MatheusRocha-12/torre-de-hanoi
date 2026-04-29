@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torre de Hanói Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Torre de Hanói</h1>
+
+    <div class="stats-container">
+        <div class="stat-box">
+            <span class="stat-label">Discos</span>
+            <select id="diskSelect">
+                <option value="3">3</option>
+                <option value="4" selected>4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+        </div>
+        <div class="stat-box">
+            <span class="stat-label">Movimentos</span>
+            <span id="moveCount" class="stat-value">0</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-label">Mínimo Ideal</span>
+            <span id="minMoves" class="stat-value min-value">0</span>
+        </div>
+        <div class="stat-box">
+            <button id="resetBtn">Reiniciar</button>
+        </div>
+    </div>
+
+    <div class="game-area">
+        <div class="tower" id="tower1">
+            <div class="disk-container"></div>
+        </div>
+        <div class="tower" id="tower2">
+            <div class="disk-container"></div>
+        </div>
+        <div class="tower" id="tower3">
+            <div class="disk-container"></div>
+        </div>
+    </div>
+
+    <div id="message"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
